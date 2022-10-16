@@ -1,0 +1,65 @@
+.line-icon {
+  cursor: pointer;
+  flex-shrink: 0;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+
+  &--copy {
+    background-image: url('/compound-components/assets/icn-copy.svg');
+
+    &:hover {
+      background-image: url('/compound-components/assets/icn-copy-green.svg');
+    }
+
+    &--blue {
+      &:hover {
+        background-image: url('/compound-components/assets/icn-copy-blue.svg');
+      }
+    }
+  }
+
+  &--external-link {
+    background-image: url('/compound-components/assets/icn-external-link.svg');
+
+    &:hover {
+      background-image: url('/compound-components/assets/icn-external-link-green.svg');
+    }
+
+    &--gray {
+      background-image: url('/compound-components/assets/icn-external-link-gray.svg');
+    }
+
+    &--green {
+      background-image: url('/compound-components/assets/icn-external-link-green.svg');
+    }
+
+    &--black {
+      background-image: url('/compound-components/assets/icn-external-link-black.svg');
+    }
+  }
+
+  &--complete {
+    background-image: url('/compound-components/assets/icn-complete.svg');
+  }
+
+  &--edit {
+    height: 30px;
+    width: 30px;
+    background-image: url('/compound-components/assets/icn-edit.svg');
+  }
+
+  &--plus {
+    height: 30px;
+    width: 30px;
+    background-image: url('/compound-components/assets/icn-plus.svg');
+  }
+
+  &--small {
+    width: 12px;
+    height: 12px;
+  }
+}

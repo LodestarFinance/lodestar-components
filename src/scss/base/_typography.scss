@@ -1,0 +1,353 @@
+@import '../abstracts/variables';
+
+@font-face {
+  font-family: 'Haas Grot Disp R';
+  src: url('/compound-components/fonts/NeueHaasGrotDispRound-55Roman.otf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Haas Grot Disp R';
+  src: url('/compound-components/fonts/NeueHaasGrotDispRound-65Medium.otf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Haas Grot Text R';
+  src: url('/compound-components/fonts/NeueHaasGrotTextRound-55Roman.otf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Haas Grot Text R';
+  src: url('/compound-components/fonts/NeueHaasGrotTextRound-65Medium.otf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Haas Grot Text R';
+  src: url('/compound-components/fonts/NeueHaasGrotTextRound-75Bold.otf');
+  font-style: bold;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Haas Grot Text R', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: $color_dark_2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 1em 0;
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Haas Grot Disp R';
+  font-style: normal;
+  font-size: 2.462rem;
+  line-height: 3.231rem;
+
+  @media (min-width: $device-md) {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+h2 {
+  font-family: 'Haas Grot Disp R';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-family: 'Haas Grot Disp R';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-family: 'Haas Grot Disp R';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  letter-spacing: 0;
+
+  @media (min-width: $device-md) {
+    font-size: 1.1rem;
+  }
+}
+
+h5 {
+  font-family: 'Haas Grot Disp R';
+  font-style: normal;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  letter-spacing: 0;
+
+  @media (min-width: $device-md) {
+    font-size: 1.1rem;
+  }
+}
+
+p {
+  font-family: 'Haas Grot Text R';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 0px;
+
+  &.small {
+    font-size: 12px;
+  }
+
+  &.p--2 {
+    font-size: 0.94rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+pre {
+  padding: $gov-column-gutter $column-gutter;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: $color_light_1;
+  border-color: $color_light_1;
+  border-radius: $border-radius;
+  counter-reset: line;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.line-numbers {
+  background-color: $color_supply;
+  height: 100%;
+  opacity: 0.1;
+  width: 3.4375rem;
+}
+
+code {
+  background-color: $color_light_1;
+
+  .token {
+    color: $color_grey_2;
+
+    &.keyword {
+      color: $color_borrow;
+    }
+
+    &.function {
+      color: $color_supply;
+    }
+
+    &.argument {
+      color: $color_dark_2;
+    }
+
+    &.string {
+      color: $color_blue_1;
+    }
+  }
+
+  .code-line {
+    counter-increment: line;
+    padding-left: 1.43rem;
+
+    &:before {
+      margin-right: 2rem;
+      color: $color_supply;
+      content: counter(line);
+      -webkit-user-select: none;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.label,
+label {
+  cursor: inherit;
+  font-family: 'Haas Grot Text R';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: $color_grey_2;
+
+  &.big {
+    font-family: 'Haas Grot Disp R';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  &.medium {
+    font-family: 'Haas Grot Disp R';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  &.dark {
+    color: $color_grey_1;
+  }
+  &.supply {
+    color: $color_supply;
+  }
+  &.borrow {
+    color: $color_borrow;
+  }
+  &.treasury {
+    color: $color_blue_1;
+  }
+}
+
+a {
+  color: inherit;
+  @include anchor();
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:active,
+a:hover {
+  color: $color_supply;
+  outline: 0;
+  text-decoration: none;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.text-large {
+  font-size: 1.2em;
+}
+
+.text-largest {
+  font-size: 1.4em;
+}
+
+.null {
+  color: $color_disabled;
+}
+
+.headline {
+  font-size: 1.39rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 0.7rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.elmsh {
+  color: #9aaab1;
+  background: $color_light_2;
+  font-size: 0.9em;
+  overflow-x: scroll;
+}
+
+.elmsh-hl {
+  background: $background_highlight;
+}
+
+.elmsh-add {
+  background: $background_addition;
+}
+
+.elmsh-del {
+  background: $background_deletion;
+}
+
+.elmsh-comm {
+  color: $comment_color;
+}
+
+.elmsh1 {
+  color: $color_blue_1;
+}
+
+.elmsh2 {
+  color: $color_blue_1;
+}
+
+.elmsh3 {
+  color: $color_borrow;
+}
+
+.elmsh4 {
+  color: $color_borrow;
+}
+
+.elmsh5 {
+  color: $color_supply;
+}
+
+.elmsh6 {
+  color: $color_blue_2;
+}
+
+.elmsh7 {
+  color: $color_dark_1;
+}
+
+.inline-code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: small;
+  color: $color_dark_2;
+  background-color: $color_light_2;
+  padding: 0.2rem;
+}
+
+.elmsh-line:before {
+  content: attr(data-elmsh-lc);
+  display: inline-block;
+  text-align: right;
+  width: 40px;
+  padding: 0 20px 0 0;
+  opacity: 0.3;
+}
