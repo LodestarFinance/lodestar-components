@@ -1,8 +1,6 @@
-## Lodestar-Components
+## Compound-Components
 
-Lodestar Components repo is a collection of styles, javascript, and elm components that are used across all of Lodestar's frontend properties.
-
-The Lodestar team forked this repository from Compound, and we are open-sourcing all our code additions as a result.
+Compound Components repo is a collection of styles, javascript, and elm components that are used across all of Compound's frontend properties.
 
 ## Sample App
 
@@ -11,7 +9,7 @@ This repository is mostly used as a pure component library, but there is a very 
 To get started, first clone this repo:
 
 ```bash
-> git clone https://github.com/LodestarFinance/lodestar-components.git && cd lodestar-components
+> git clone https://github.com/compound-finance/compound-components.git && cd compound-components
 ```
 
 Next, install yarn dependencies (note, you should not use `npm` instead of `yarn` during `install` because `npm` does not respect `yarn.lock`.):

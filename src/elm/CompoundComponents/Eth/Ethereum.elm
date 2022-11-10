@@ -94,7 +94,7 @@ etherscanUrl network urlValue =
     in
     case network of
         MainNet ->
-            Just ("https://etherscan.io/" ++ linkType ++ "/" ++ linkValue)
+            Just ("https://arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
 
         Rinkeby ->
             Just ("https://rinkeby.etherscan.io/" ++ linkType ++ "/" ++ linkValue)
@@ -110,6 +110,9 @@ etherscanUrl network urlValue =
 
         Arbitrumtest ->
             Just ("https://testnet.arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
+
+        Arbitrumgoerli ->
+            Just ("https://goerli.arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
 
         _ ->
             Nothing
@@ -132,12 +135,12 @@ etherscanLink maybeNetwork value attributes =
 
 blocksPerDay : Int
 blocksPerDay =
-    floor (24.0 * 60.0 * 60.0 / 15.0)
+    floor (24.0 * 60.0 * 60.0)
 
 
 blocksPerHour : Float -> Int
 blocksPerHour n =
-    floor (n * 24.0 * 60.0 / 15.0)
+    floor (n * 24.0 * 60.0)
 
 
 assetAddressToContractAddress : AssetAddress -> ContractAddress

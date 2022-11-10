@@ -27,7 +27,7 @@ networkFromId networkIdVal =
         0 ->
             Olympic
 
-        42161 ->
+        1 ->
             MainNet
 
         2 ->
@@ -54,7 +54,7 @@ networkFromId networkIdVal =
         421611 ->
             Arbitrumtest 
 
-        421612 ->
+        42161 ->
             Arbitrum
 
         421613 ->
@@ -163,7 +163,7 @@ networkId network =
             0
 
         MainNet ->
-            42161
+            1
 
         Morden ->
             2
@@ -193,7 +193,7 @@ networkId network =
             421613
 
         Arbitrum ->
-            421612
+            42161
 
         Core ->
             99

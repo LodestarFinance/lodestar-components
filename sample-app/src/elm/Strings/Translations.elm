@@ -22,11 +22,11 @@ connect_wallet lang =
             "Connect Wallet"
 
 
-to_start_using_lodestar : Lang -> String
-to_start_using_lodestar lang =
+to_start_using_compound : Lang -> String
+to_start_using_compound lang =
     case lang of
         En ->
-            "To start using Lodestar"
+            "To start using Compound"
 
 
 metamask : Lang -> String
@@ -47,7 +47,7 @@ choose_wallet_terms_part1 : Lang -> String
 choose_wallet_terms_part1 lang =
     case lang of
         En ->
-            "By connecting, I accept Lodestar's "
+            "By connecting, I accept Compound's "
 
 
 choose_wallet_terms_part2 : Lang -> String
