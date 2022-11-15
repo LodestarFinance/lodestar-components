@@ -212,7 +212,7 @@ getEtherscanDomain network =
             Nothing
 
         MainNet ->
-            Just "arbiscan.io"
+            Just "etherscan.io"
 
         Morden ->
             Nothing
