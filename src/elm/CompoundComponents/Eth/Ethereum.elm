@@ -114,6 +114,9 @@ etherscanUrl network urlValue =
         Arbitrumgoerli ->
             Just ("https://goerli.arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
 
+        Arbitrum ->
+            Just ("https://arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
+
         _ ->
             Nothing
 
