@@ -28,8 +28,8 @@ async function connectWalletLink(eth, disallowAuthDialog = false) {
   const CHAIN_ID = 1;
 
   const walletLink = new WalletLink({
-    appName: 'Lodestar',
-    appLogoUrl: '/compound-components/assets/asset_LODE.svg',
+    appName: 'Lodestar Finance',
+    appLogoUrl: 'https://app.compound.finance/images/compound-192.png',
   });
 
   const trxProvider = walletLink.makeWeb3Provider(JSONRPC_URL, CHAIN_ID);

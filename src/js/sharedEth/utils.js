@@ -104,6 +104,9 @@ function networkFromId(id) {
     case 421611:
       return 'arbitrumtest';
 
+    case 42161:
+      return 'arbitrum';
+
     case 999:
       return 'development';
 
